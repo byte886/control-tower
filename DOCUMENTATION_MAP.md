@@ -19,7 +19,7 @@
 | ② 调研方法 | research-toolkit | `SKILL.md`（能力登记）+ `references/research-router.md`（调研类型路由）+ `references/channel-directory.md`（渠道目录）+ `references/industry-packs.md`（行业包） |
 | ③ 情报雷达 | ai-intel-monitor | `README.md` + `AGENTS.md` + `01_渠道矩阵/` + `02_监控对象/` + `03_监控机制/` + `04_落地工具/` + `场景应用/` + `DOCUMENTATION_MAP.md` |
 | ④ 生产执行 | ai-video-studio | `README.md` + `00_项目总纲.md` + `01_结论与产出/` + `02_决策记录/` + `03_进行中的任务/` |
-| ⑤ 运营分发 | self-media-ops | `README.md` + `总纲.md`（五仓速查）+ `docs/SYSTEM_STRATEGY.md`（业务方向）+ `docs/project-management/memory/repo-map.md`（协作地图） |
+| ⑤ 运营分发 | we-media-ops | `README.md` + `总纲.md`（五仓速查）+ `docs/SYSTEM_STRATEGY.md`（业务方向）+ `docs/project-management/memory/repo-map.md`（协作地图） |
 | 治理参考 | accounting-kb | `README.md` + `AGENTS.md`（治理规范）+ `CHANGELOG.md` + `docs/` + `project-management/` |
 
 ## 权威源归属规则

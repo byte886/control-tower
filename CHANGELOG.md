@@ -2,6 +2,10 @@
 
 > 只记体系级变更（新增/合并/移除仓库、路由、纪律、治理标准、方法论变化）；各仓细节变更记在各仓自己的 CHANGELOG。
 
+## 2026-10-08（改名）
+
+- ［改名］运营分发仓 `self-media-ops` → **`we-media-ops`**（用户拍板：We Media 为"自媒体"英文原生词源，2003 美国新闻学会《We Media》报告；ops = Operations 标准缩写非中译英）。本地目录 `~/Desktop/we-media-ops`、GitHub 远端 `byte886/we-media-ops` 同步；本仓 README/docs/SKILL/DOCUMENTATION_MAP/五层现状总表指针同步更新。
+
 ## 2026-10-08（合并）
 
 - ［合并］**multi-repo-orchestration 技能与 system-architecture 总控仓合并为单一桌面仓**（用户拍板）：技能方法论全文入 `docs/SKILL.md`，原总控仓五仓总览/现状表/治理文档保留于本仓；README 重写为合并版（方法论入口 + 五仓现状 + 指针表）
