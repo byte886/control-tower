@@ -5,7 +5,7 @@ description: 多仓库业务体系的总体编排方法论。当用户维护多�
 
 # 多仓库体系编排（multi-repo-orchestration）
 
-> 解决一个具体问题：**多个仓库构成一个业务体系时，关系、调度、总控放哪里**。已实践验证于"鉴藏（heritage）体系"五仓：采集底座 multiplatform-content-pipeline / 调研方法论 web-research-toolkit / 情报雷达 ai-intel-monitor / 生产执行 ai-video-studio / 运营分发 self-media-ops。
+> 解决一个具体问题：**多个仓库构成一个业务体系时，关系、调度、总控放哪里**。已实践验证于"鉴藏（heritage）体系"五仓：采集底座 multiplatform-content-pipeline / 调研方法论 research-toolkit / 情报雷达 ai-intel-monitor / 生产执行 ai-video-studio / 运营分发 self-media-ops。
 
 ## 1. 核心原则：意图与驱动分离（最重要）
 
