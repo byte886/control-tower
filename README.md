@@ -1,0 +1,90 @@
+# 五仓体系总控仓（system-architecture）
+
+> **文档类型**：Constitution（项目章程 / 总控仓）
+> **定位**：五仓体系的**唯一权威源**。架构文档此前散落多处（self-media-ops/docs/project-management/memory/repo-map.md、self-media-ops/总纲.md、multiplatform-content-pipeline/docs/SYSTEM_ARCHITECTURE.md），本仓收敛为一份总览：五仓是谁、怎么协作、怎么路由、治理怎么统一。**详细机制**仍以各仓内权威文档为准（本仓只做指针收敛与总览，不重复维护细节正文）。
+> **维护者**：人拍板，AI 执行
+> **更新频率**：体系级变更（新增/合并/移除仓库、路由或纪律变化）时
+
+---
+
+## 一、五仓体系总览
+
+五仓分工：**采集（知识从哪来）→ 调研（外部信息怎么查）→ 情报（正在发生什么）→ 生产（怎么做）→ 分发（怎么卖）**，外加一个治理参考仓。
+
+| 层 | 仓库 | 位置 | 回答的问题 | 自治驱动点 |
+|---|---|---|---|---|
+| ① 采集底座 | **multiplatform-content-pipeline** | `~/Desktop/multiplatform-content-pipeline` | 知识从哪来 | ✅ 数据引擎：给渠道/博主即采集→转写→知识成品 |
+| ② 调研方法 | **web-research-toolkit** | `~/Doubao/skills/web-research-toolkit`（git 子模块） | 外部信息怎么查 | ✅ 方法层：行业包/渠道目录/分层路由 |
+| ③ 情报雷达 | **ai-intel-monitor** | `~/Desktop/ai-intel-monitor` | 正在发生什么 | ✅ 定时扫描：主题→情报速递（周/双周/月） |
+| ④ 生产执行 | **heritage-ai-video-sop** | `~/Desktop/heritage-ai-video-sop` | 怎么做 | ✅ 接单即产：产品图→成片→门禁 G1-G5 |
+| ⑤ 运营分发 | **self-media-ops** | `~/Desktop/self-media-ops` | 怎么卖（方向） | 🔶 人驱动：定方向/选题/优先级（不阻塞下游） |
+| 治理参考 | **accounting-kb** | `~/Desktop/accounting-kb` | 怎么治理/怎么写文档 | 治理方法论参考：README/AGENTS/docs 分层、Diátaxis、质量保证 |
+
+## 二、分工关系（数据流）
+
+```
+ai-intel-monitor（情报：看什么/去哪看）
+        ↓ 发现新工具/新方法
+multiplatform-content-pipeline（管道：下载/转写/分析）
+        ↓ 提取出SOP
+heritage-ai-video-sop（生产：出图/出视频/质检）
+        ↓ 产出素材
+self-media-ops（发布：文案策略/AI味质检/运营知识）
+        ↑ 治理规范参考
+accounting-kb（怎么治理/怎么写文档）
+```
+
+## 三、调度逻辑（产物驱动对接表）
+
+> **核心原则：只通过产物对接，不通过指令对接。** 上游产出了什么，下游直接用，不用等谁发话。
+
+| 仓 | 输入（可独立造） | 自测输出 | 下游消费方 |
+|---|---|---|---|
+| pipeline | 一个渠道/博主（如宝石学家老许） | 知识成品 md（05_knowledge） | sop 取素材、monitor 取情报线索 |
+| monitor | 一个主题（如翡翠公盘） | 情报速递 md（01_渠道矩阵→场景应用） | ops 选题、sop 决策 |
+| sop | 一张产品图 | 成片/方案图（视频/图） | ops 发布 |
+| ops | 一个选题 | 文案+排期 | 对外发布（无下游） |
+| toolkit | 一个行业（如鉴藏/翡翠） | 行业包（词库/模板/渠道） | pipeline 采集配置、monitor 矩阵 |
+
+## 四、任务路由表（接到任务先判断）
+
+```
+接到任务 → 判断任务类型：
+├─ 业务意图（发什么/卖什么/定方向）→ self-media-ops 策略层（docs/SYSTEM_STRATEGY.md）
+├─ 采集/知识生成（采某博主/某渠道内容）→ pipeline（docs/WORKFLOW 四阶段）
+├─ 查外部资料/选工具/行业调研 → web-research-toolkit（references/research-router 分层路由 L1-L3）
+├─ 盯动态/定时扫描 → ai-intel-monitor（周/双周/月机制）
+├─ 出图/出视频 → heritage-ai-video-sop（SOP + 门禁 G1-G5）
+├─ 发朋友圈/自媒体内容 → self-media-ops（写作SOP + AI味检查）
+└─ 跨层任务 → 先读本仓 README 路由，再进对应仓；拿不准就高走：先读策略层
+```
+
+## 五、跨仓纪律（所有仓遵守）
+
+1. **来源四档强制**：✅已查证（官方一手可回源）/ 🔶经搜索补充（≥2独立源）/ 🟡一方说法 / ⚪未经核实单列——不编造 URL/价格/数据
+2. **OKF 统一**：知识成品用 OKF v0.2 标准档 frontmatter（各仓 AGENTS 有 type 词表与校验纪律）；存量不强制回填、新写自然采用
+3. **鉴藏总域**：行业/知识归属一律按 `domains/heritage/` 子域表（01_jewelry / 02_jadeite / 03_antiques / 04_furniture / 05_eastern-heritage / 06_western-heritage）
+4. **建包顺序**：新子域启用 = 调研技能行业包（词库+模板）→ 监控仓渠道矩阵 → pipeline 采集配置
+5. **子模块纪律**：技能类仓库（web-research-toolkit）改后必须回父仓库 `~/Doubao/skills` 更新指针再 push
+6. **定时更新**：周热搜 / 双周工具价格 / 月度渠道规则 / 事件驱动（搜索算法变化、工具上下线）
+
+## 六、五层现状总览
+
+> 各层治理成熟度与当前状态详见 `docs/五层现状总表.md`（逐仓：文档成熟度 / 当前状态 / 关键指针）。总表随各仓 CHANGELOG 更新。
+
+| 层 | 仓 | 治理文件 | 当前状态（2026-10-08 核对） |
+|---|---|---|---|
+| ① 采集底座 | multiplatform-content-pipeline | AGENTS/README/docs 齐，缺根 CHANGELOG | 🔄 采集/知识提取进行中，台账停 09-23 |
+| ② 调研方法 | web-research-toolkit | SKILL.md + references 16 篇（技能仓口径自洽） | ✅ 能力成型，10 行业包全正式 |
+| ③ 情报雷达 | ai-intel-monitor | 五台账齐（AGENTS/CHANGELOG/DOCUMENTATION_MAP/TASK_STATUS/ISSUES） | ✅ 13/15 里程碑，人工验证期 |
+| ④ 生产执行 | heritage-ai-video-sop | AGENTS/根 CHANGELOG/PROFILE/编号目录（无 docs/） | 🟢 On Track，方案 A 定稿，M4 待做 |
+| ⑤ 运营分发 | self-media-ops | AGENTS/总纲/docs 齐，**缺 TASK_STATUS/ISSUES/CHANGELOG** | 🆕 珠宝冷启动第 1 周 |
+| 治理参考 | accounting-kb | 治理标杆，全范式齐备（22 ADR） | ⏸ 等人工闸口/风控解除 |
+
+## 相关文档
+
+- 详细路由机制（体系级运行规则）：`multiplatform-content-pipeline/docs/SYSTEM_ARCHITECTURE.md`
+- 业务方向与选题策略：`self-media-ops/docs/SYSTEM_STRATEGY.md`
+- 运营总纲（五仓速查）：`self-media-ops/总纲.md`
+- 跨仓库协作地图：`self-media-ops/docs/project-management/memory/repo-map.md`
+- 本仓文档地图：`DOCUMENTATION_MAP.md` ｜ 变更记录：`CHANGELOG.md` ｜ 代理规范：`AGENTS.md`
