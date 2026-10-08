@@ -1,4 +1,4 @@
-# 多仓库体系编排（multi-repo-orchestration）
+# 体系总控（control-tower）
 
 > **文档类型**：Constitution（体系总控 + 方法论）
 > **定位**：**本仓 = 多仓库编排方法论 + 五仓体系实例的唯一权威源**。合并自两个来源：原技能 `multi-repo-orchestration`（方法论全文，见 [docs/SKILL.md](docs/SKILL.md)）+ 原总控仓 `system-architecture`（五仓实例总览，见本 README 与 [docs/五层现状总表.md](docs/五层现状总表.md)）。架构文档不再散落多处，防双写漂移。
@@ -23,8 +23,8 @@
 |---|---|---|---|---|
 | ① 采集底座 | **multiplatform-content-pipeline** | `~/Desktop/multiplatform-content-pipeline` | 知识从哪来 | ✅ 数据引擎：给渠道/博主即采集→转写→知识成品 |
 | ② 调研方法 | **research-toolkit** | `~/Doubao/skills/research-toolkit`（git 子模块） | 外部信息怎么查 | ✅ 方法层：行业包/渠道目录/分层路由 |
-| ③ 情报雷达 | **ai-intel-monitor** | `~/Desktop/ai-intel-monitor` | 正在发生什么 | ✅ 定时扫描：主题→情报速递（周/双周/月） |
-| ④ 生产执行 | **ai-video-studio** | `~/Desktop/ai-video-studio` | 怎么做 | ✅ 接单即产：产品图→成片→门禁 G1-G5 |
+| ③ 情报雷达 | **trend-radar** | `~/Desktop/trend-radar` | 正在发生什么 | ✅ 定时扫描：主题→情报速递（周/双周/月） |
+| ④ 生产执行 | **video-studio** | `~/Desktop/video-studio` | 怎么做 | ✅ 接单即产：产品图→成片→门禁 G1-G5 |
 | ⑤ 运营分发 | **we-media-ops** | `~/Desktop/we-media-ops` | 怎么卖（方向） | 🔶 人驱动：定方向/选题/优先级（不阻塞下游） |
 | 治理参考 | **accounting-kb** | `~/Desktop/accounting-kb` | 怎么治理/怎么写文档 | 治理方法论参考：README/AGENTS/docs 分层、Diátaxis、质量保证 |
 
@@ -47,8 +47,8 @@
 ├─ 业务意图（发什么/卖什么/定方向）→ we-media-ops 策略层（docs/SYSTEM_STRATEGY.md）
 ├─ 采集/知识生成（采某博主/某渠道内容）→ pipeline（docs/WORKFLOW 四阶段）
 ├─ 查外部资料/选工具/行业调研 → research-toolkit（references/research-router 分层路由 L1-L3）
-├─ 盯动态/定时扫描 → ai-intel-monitor（周/双周/月机制）
-├─ 出图/出视频 → ai-video-studio（SOP + 门禁 G1-G5）
+├─ 盯动态/定时扫描 → trend-radar（周/双周/月机制）
+├─ 出图/出视频 → video-studio（SOP + 门禁 G1-G5）
 ├─ 发朋友圈/自媒体内容 → we-media-ops（写作SOP + AI味检查）
 └─ 跨层任务 → 先读本仓 README 路由，再进对应仓；拿不准就高走：先读策略层
 ```
@@ -70,8 +70,8 @@
 |---|---|---|---|
 | ① 采集底座 | multiplatform-content-pipeline | AGENTS/README/docs 齐，根 CHANGELOG 已补 | 🔄 采集/知识提取进行中 |
 | ② 调研方法 | research-toolkit | SKILL.md + references 16 篇（技能仓口径自洽） | ✅ 能力成型，10 行业包全正式 |
-| ③ 情报雷达 | ai-intel-monitor | 五台账齐 | ✅ 13/15 里程碑，人工验证期 |
-| ④ 生产执行 | ai-video-studio | AGENTS/根 CHANGELOG/PROFILE/编号目录 | 🟢 On Track，M4 待做 |
+| ③ 情报雷达 | trend-radar | 五台账齐 | ✅ 13/15 里程碑，人工验证期 |
+| ④ 生产执行 | video-studio | AGENTS/根 CHANGELOG/PROFILE/编号目录 | 🟢 On Track，M4 待做 |
 | ⑤ 运营分发 | we-media-ops | 治理三件套已补全（TASK_STATUS/ISSUES/CHANGELOG） | 🆕 珠宝冷启动第 1 周 |
 | 治理参考 | accounting-kb | 治理标杆，全范式齐备（22 ADR） | ⏸ 等人工闸口/风控解除 |
 

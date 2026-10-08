@@ -1,11 +1,11 @@
 ---
-name: multi-repo-orchestration
+name: control-tower
 description: 多仓库业务体系的总体编排方法论。当用户维护多个仓库（采集/调研/监控/生产/运营）构成一个业务体系，需要设计仓库间关系、调度逻辑、总控位置、产物对接、任务路由，或新建/重构多仓体系时使用。核心解决：总控放哪里（意图层 vs 驱动层）、各仓如何自治可独立测试、如何产物驱动不阻塞、任务来了先走哪。触发场景：用户说"这几个仓库怎么规划/怎么协同/总控放哪里/调度逻辑"、体系重构、新业务开仓选型。
 ---
 
-# 多仓库体系编排（multi-repo-orchestration）
+# 多仓库体系编排（control-tower）
 
-> 解决一个具体问题：**多个仓库构成一个业务体系时，关系、调度、总控放哪里**。已实践验证于"鉴藏（heritage）体系"五仓：采集底座 multiplatform-content-pipeline / 调研方法论 research-toolkit / 情报雷达 ai-intel-monitor / 生产执行 ai-video-studio / 运营分发 we-media-ops。
+> 解决一个具体问题：**多个仓库构成一个业务体系时，关系、调度、总控放哪里**。已实践验证于"鉴藏（heritage）体系"五仓：采集底座 multiplatform-content-pipeline / 调研方法论 research-toolkit / 情报雷达 trend-radar / 生产执行 video-studio / 运营分发 we-media-ops。
 
 ## 1. 核心原则：意图与驱动分离（最重要）
 
