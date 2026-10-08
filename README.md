@@ -21,7 +21,7 @@
 
 | 层 | 仓库 | 位置 | 回答的问题 | 自治驱动点 |
 |---|---|---|---|---|
-| ① 采集底座 | **multiplatform-content-pipeline** | `~/Desktop/multiplatform-content-pipeline` | 知识从哪来 | ✅ 数据引擎：给渠道/博主即采集→转写→知识成品 |
+| ① 采集底座 | **content-pipeline** | `~/Desktop/content-pipeline` | 知识从哪来 | ✅ 数据引擎：给渠道/博主即采集→转写→知识成品 |
 | ② 调研方法 | **research-toolkit** | `~/Doubao/skills/research-toolkit`（git 子模块） | 外部信息怎么查 | ✅ 方法层：行业包/渠道目录/分层路由 |
 | ③ 情报雷达 | **trend-radar** | `~/Desktop/trend-radar` | 正在发生什么 | ✅ 定时扫描：主题→情报速递（周/双周/月） |
 | ④ 生产执行 | **video-studio** | `~/Desktop/video-studio` | 怎么做 | ✅ 接单即产：产品图→成片→门禁 G1-G5 |
@@ -68,7 +68,7 @@
 
 | 层 | 仓 | 治理文件 | 当前状态（2026-10-08 核对） |
 |---|---|---|---|
-| ① 采集底座 | multiplatform-content-pipeline | AGENTS/README/docs 齐，根 CHANGELOG 已补 | 🔄 采集/知识提取进行中 |
+| ① 采集底座 | content-pipeline | AGENTS/README/docs 齐，根 CHANGELOG 已补 | 🔄 采集/知识提取进行中 |
 | ② 调研方法 | research-toolkit | SKILL.md + references 16 篇（技能仓口径自洽） | ✅ 能力成型，10 行业包全正式 |
 | ③ 情报雷达 | trend-radar | 五台账齐 | ✅ 13/15 里程碑，人工验证期 |
 | ④ 生产执行 | video-studio | AGENTS/根 CHANGELOG/PROFILE/编号目录 | 🟢 On Track，M4 待做 |
@@ -79,7 +79,7 @@
 
 - 方法论全文：`docs/SKILL.md`（原 multi-repo-orchestration 技能正文）
 - 逐仓现状：`docs/五层现状总表.md`
-- 详细路由机制（体系级运行规则）：`multiplatform-content-pipeline/docs/SYSTEM_ARCHITECTURE.md`（薄指针，指向本仓）
+- 详细路由机制（体系级运行规则）：`content-pipeline/docs/SYSTEM_ARCHITECTURE.md`（薄指针，指向本仓）
 - 业务方向与选题策略：`we-media-ops/docs/SYSTEM_STRATEGY.md`
 - 运营总纲（五仓速查）：`we-media-ops/总纲.md`
 - 跨仓库协作地图：`we-media-ops/docs/project-management/memory/repo-map.md`

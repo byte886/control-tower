@@ -15,7 +15,7 @@
 
 | 层 | 仓 | 权威入口 |
 |---|---|---|
-| ① 采集底座 | multiplatform-content-pipeline | `README.md` + `docs/SYSTEM_ARCHITECTURE.md`（薄指针，指向本仓）+ `docs/WORKFLOW.md` + `docs/DOCUMENTATION_MAP.md` |
+| ① 采集底座 | content-pipeline | `README.md` + `docs/SYSTEM_ARCHITECTURE.md`（薄指针，指向本仓）+ `docs/WORKFLOW.md` + `docs/DOCUMENTATION_MAP.md` |
 | ② 调研方法 | research-toolkit | `SKILL.md`（能力登记）+ `references/research-router.md`（调研类型路由）+ `references/channel-directory.md`（渠道目录）+ `references/industry-packs.md`（行业包） |
 | ③ 情报雷达 | trend-radar | `README.md` + `AGENTS.md` + `01_渠道矩阵/` + `02_监控对象/` + `03_监控机制/` + `04_落地工具/` + `场景应用/` + `DOCUMENTATION_MAP.md` |
 | ④ 生产执行 | video-studio | `README.md` + `00_项目总纲.md` + `01_结论与产出/` + `02_决策记录/` + `03_进行中的任务/` |
@@ -24,5 +24,5 @@
 
 ## 权威源归属规则
 
-- 本仓 README 的"五仓架构/路由/纪律"为**唯一权威源**（合并自原 system-architecture 与 pipeline 仓 SYSTEM_ARCHITECTURE 的降级迁移）；`multiplatform-content-pipeline/docs/SYSTEM_ARCHITECTURE.md` 已降级为薄指针指向本仓。
+- 本仓 README 的"五仓架构/路由/纪律"为**唯一权威源**（合并自原 system-architecture 与 pipeline 仓 SYSTEM_ARCHITECTURE 的降级迁移）；`content-pipeline/docs/SYSTEM_ARCHITECTURE.md` 已降级为薄指针指向本仓。
 - 五仓现状以本仓 `docs/五层现状总表.md` 为**唯一权威总表**；各仓内部状态以其自身 TASK_STATUS/CHANGELOG 为准。

@@ -4,6 +4,7 @@
 
 ## 2026-10-09（改名）
 
+- ［改名］采集底座仓 `multiplatform-content-pipeline` → **`content-pipeline`**（用户拍板：原名过长；content-pipeline 为英文标准术语，砍掉 multiplatform 隐含属性，与体系 2 词风格统一）。本地目录 `~/Desktop/content-pipeline`、GitHub 远端 `byte886/content-pipeline` 同步；本仓 README/docs/SKILL/DOCUMENTATION_MAP/五层现状总表指针同步更新；we-media-ops 子模块 URL 同步。
 - ［改名］总控仓 `multi-repo-orchestration` → **`control-tower`**（用户拍板：control-tower 为 Gartner 供应链控制塔术语，语义=对整个体系的统一可见+决策，与"总控仓"定位直译一致；此前候选 repo-orchestration 因"编排对象是仓与仓的协作而非 repo 本身"被弃）。本地目录 `~/Desktop/control-tower`、GitHub 远端 `byte886/control-tower` 同步；全仓指针同步更新。
 - ［改名］情报雷达仓 `ai-intel-monitor` → **`trend-radar`**（用户拍板：intel 非正式且撞 Intel 品牌；trend-radar 有 TrendRadar 53k stars 先例，语义=追踪趋势变化，与体系去 ai 前缀统一）。本地目录 `~/Desktop/trend-radar`、GitHub 远端 `byte886/trend-radar` 同步。
 - ［改名］生产执行仓 `ai-video-studio` → **`video-studio`**（体系去 ai 前缀统一：AI 在体系内不言而喻）。本地目录 `~/Desktop/video-studio`、GitHub 远端 `byte886/video-studio` 同步。
