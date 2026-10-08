@@ -1,15 +1,23 @@
-# 五仓体系总控仓（system-architecture）
+# 多仓库体系编排（multi-repo-orchestration）
 
-> **文档类型**：Constitution（项目章程 / 总控仓）
-> **定位**：五仓体系的**唯一权威源**。架构文档此前散落多处（self-media-ops/docs/project-management/memory/repo-map.md、self-media-ops/总纲.md、multiplatform-content-pipeline/docs/SYSTEM_ARCHITECTURE.md），本仓收敛为一份总览：五仓是谁、怎么协作、怎么路由、治理怎么统一。**详细机制**仍以各仓内权威文档为准（本仓只做指针收敛与总览，不重复维护细节正文）。
+> **文档类型**：Constitution（体系总控 + 方法论）
+> **定位**：**本仓 = 多仓库编排方法论 + 五仓体系实例的唯一权威源**。合并自两个来源：原技能 `multi-repo-orchestration`（方法论全文，见 [docs/SKILL.md](docs/SKILL.md)）+ 原总控仓 `system-architecture`（五仓实例总览，见本 README 与 [docs/五层现状总表.md](docs/五层现状总表.md)）。架构文档不再散落多处，防双写漂移。
 > **维护者**：人拍板，AI 执行
-> **更新频率**：体系级变更（新增/合并/移除仓库、路由或纪律变化）时
+> **更新频率**：体系级变更（新增/合并/移除仓库、路由或纪律变化、方法论更新）时
 
 ---
 
-## 一、五仓体系总览
+## 一、方法论入口（怎么编排多仓体系）
 
-五仓分工：**采集（知识从哪来）→ 调研（外部信息怎么查）→ 情报（正在发生什么）→ 生产（怎么做）→ 分发（怎么卖）**，外加一个治理参考仓。
+> 完整方法论正文见 **[docs/SKILL.md](docs/SKILL.md)**（原技能全文，87 行）。要点速记：
+
+- **核心原则：意图与驱动分离**——人管方向（意图层，异步不阻塞），系统自治（驱动层，每仓有最小闭环、可独立测试）
+- **只通过产物对接，不通过指令对接**——上游产物"就绪"→ 下游即可消费，不等待、不轮询、不发指令
+- **总控落位决策表**：有数据源头仓→驱动层文档放底座仓；平级多仓→独立成文；体系庞大（>6 仓）→才考虑独立总控仓
+- **落地步骤**：盘仓（按五层归类）→ 定总控 → 建产物对接表 → 写路由表 → 同步指针 → 命名统一 → 分仓推送
+- 与 `project-manager`（单仓治理）、`okf-wiki`（知识成品格式）互补：本方法论管**仓与仓之间**的组织
+
+## 二、五仓体系实例总览（本仓库即本实例的总控）
 
 | 层 | 仓库 | 位置 | 回答的问题 | 自治驱动点 |
 |---|---|---|---|---|
@@ -19,20 +27,6 @@
 | ④ 生产执行 | **heritage-ai-video-sop** | `~/Desktop/heritage-ai-video-sop` | 怎么做 | ✅ 接单即产：产品图→成片→门禁 G1-G5 |
 | ⑤ 运营分发 | **self-media-ops** | `~/Desktop/self-media-ops` | 怎么卖（方向） | 🔶 人驱动：定方向/选题/优先级（不阻塞下游） |
 | 治理参考 | **accounting-kb** | `~/Desktop/accounting-kb` | 怎么治理/怎么写文档 | 治理方法论参考：README/AGENTS/docs 分层、Diátaxis、质量保证 |
-
-## 二、分工关系（数据流）
-
-```
-ai-intel-monitor（情报：看什么/去哪看）
-        ↓ 发现新工具/新方法
-multiplatform-content-pipeline（管道：下载/转写/分析）
-        ↓ 提取出SOP
-heritage-ai-video-sop（生产：出图/出视频/质检）
-        ↓ 产出素材
-self-media-ops（发布：文案策略/AI味质检/运营知识）
-        ↑ 治理规范参考
-accounting-kb（怎么治理/怎么写文档）
-```
 
 ## 三、调度逻辑（产物驱动对接表）
 
@@ -70,20 +64,22 @@ accounting-kb（怎么治理/怎么写文档）
 
 ## 六、五层现状总览
 
-> 各层治理成熟度与当前状态详见 `docs/五层现状总表.md`（逐仓：文档成熟度 / 当前状态 / 关键指针）。总表随各仓 CHANGELOG 更新。
+> 各层治理成熟度与当前状态详见 [docs/五层现状总表.md](docs/五层现状总表.md)（逐仓：文档成熟度 / 当前状态 / 关键指针）。总表随各仓 CHANGELOG 更新。
 
 | 层 | 仓 | 治理文件 | 当前状态（2026-10-08 核对） |
 |---|---|---|---|
-| ① 采集底座 | multiplatform-content-pipeline | AGENTS/README/docs 齐，缺根 CHANGELOG | 🔄 采集/知识提取进行中，台账停 09-23 |
+| ① 采集底座 | multiplatform-content-pipeline | AGENTS/README/docs 齐，根 CHANGELOG 已补 | 🔄 采集/知识提取进行中 |
 | ② 调研方法 | web-research-toolkit | SKILL.md + references 16 篇（技能仓口径自洽） | ✅ 能力成型，10 行业包全正式 |
-| ③ 情报雷达 | ai-intel-monitor | 五台账齐（AGENTS/CHANGELOG/DOCUMENTATION_MAP/TASK_STATUS/ISSUES） | ✅ 13/15 里程碑，人工验证期 |
-| ④ 生产执行 | heritage-ai-video-sop | AGENTS/根 CHANGELOG/PROFILE/编号目录（无 docs/） | 🟢 On Track，方案 A 定稿，M4 待做 |
-| ⑤ 运营分发 | self-media-ops | AGENTS/总纲/docs 齐，**缺 TASK_STATUS/ISSUES/CHANGELOG** | 🆕 珠宝冷启动第 1 周 |
+| ③ 情报雷达 | ai-intel-monitor | 五台账齐 | ✅ 13/15 里程碑，人工验证期 |
+| ④ 生产执行 | heritage-ai-video-sop | AGENTS/根 CHANGELOG/PROFILE/编号目录 | 🟢 On Track，M4 待做 |
+| ⑤ 运营分发 | self-media-ops | 治理三件套已补全（TASK_STATUS/ISSUES/CHANGELOG） | 🆕 珠宝冷启动第 1 周 |
 | 治理参考 | accounting-kb | 治理标杆，全范式齐备（22 ADR） | ⏸ 等人工闸口/风控解除 |
 
 ## 相关文档
 
-- 详细路由机制（体系级运行规则）：`multiplatform-content-pipeline/docs/SYSTEM_ARCHITECTURE.md`
+- 方法论全文：`docs/SKILL.md`（原 multi-repo-orchestration 技能正文）
+- 逐仓现状：`docs/五层现状总表.md`
+- 详细路由机制（体系级运行规则）：`multiplatform-content-pipeline/docs/SYSTEM_ARCHITECTURE.md`（薄指针，指向本仓）
 - 业务方向与选题策略：`self-media-ops/docs/SYSTEM_STRATEGY.md`
 - 运营总纲（五仓速查）：`self-media-ops/总纲.md`
 - 跨仓库协作地图：`self-media-ops/docs/project-management/memory/repo-map.md`

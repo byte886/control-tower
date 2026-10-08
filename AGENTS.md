@@ -1,6 +1,6 @@
-# AGENTS.md — system-architecture 代理工作规则
+# AGENTS.md — multi-repo-orchestration 代理工作规则
 
-> 本仓是五仓体系的**总控仓/章程仓**：只维护体系级总览与指针，不重复维护各仓细节正文。所有跨仓任务先读本仓 README 路由表，再进对应仓。
+> 本仓是五仓体系的**总控/方法论仓**（合并自原 system-architecture 总控仓与原 multi-repo-orchestration 技能）：维护多仓库编排方法论 + 体系级总览与指针，不重复维护各仓细节正文。所有跨仓任务先读本仓 README 路由表，再进对应仓；跨仓组织方法疑问读 docs/SKILL.md。
 
 ## 仓定位与边界
 
