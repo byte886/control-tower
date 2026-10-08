@@ -24,7 +24,7 @@
 | ① 采集底座 | **multiplatform-content-pipeline** | `~/Desktop/multiplatform-content-pipeline` | 知识从哪来 | ✅ 数据引擎：给渠道/博主即采集→转写→知识成品 |
 | ② 调研方法 | **web-research-toolkit** | `~/Doubao/skills/web-research-toolkit`（git 子模块） | 外部信息怎么查 | ✅ 方法层：行业包/渠道目录/分层路由 |
 | ③ 情报雷达 | **ai-intel-monitor** | `~/Desktop/ai-intel-monitor` | 正在发生什么 | ✅ 定时扫描：主题→情报速递（周/双周/月） |
-| ④ 生产执行 | **heritage-ai-video-sop** | `~/Desktop/heritage-ai-video-sop` | 怎么做 | ✅ 接单即产：产品图→成片→门禁 G1-G5 |
+| ④ 生产执行 | **ai-video-studio** | `~/Desktop/ai-video-studio` | 怎么做 | ✅ 接单即产：产品图→成片→门禁 G1-G5 |
 | ⑤ 运营分发 | **self-media-ops** | `~/Desktop/self-media-ops` | 怎么卖（方向） | 🔶 人驱动：定方向/选题/优先级（不阻塞下游） |
 | 治理参考 | **accounting-kb** | `~/Desktop/accounting-kb` | 怎么治理/怎么写文档 | 治理方法论参考：README/AGENTS/docs 分层、Diátaxis、质量保证 |
 
@@ -48,7 +48,7 @@
 ├─ 采集/知识生成（采某博主/某渠道内容）→ pipeline（docs/WORKFLOW 四阶段）
 ├─ 查外部资料/选工具/行业调研 → web-research-toolkit（references/research-router 分层路由 L1-L3）
 ├─ 盯动态/定时扫描 → ai-intel-monitor（周/双周/月机制）
-├─ 出图/出视频 → heritage-ai-video-sop（SOP + 门禁 G1-G5）
+├─ 出图/出视频 → ai-video-studio（SOP + 门禁 G1-G5）
 ├─ 发朋友圈/自媒体内容 → self-media-ops（写作SOP + AI味检查）
 └─ 跨层任务 → 先读本仓 README 路由，再进对应仓；拿不准就高走：先读策略层
 ```
@@ -71,7 +71,7 @@
 | ① 采集底座 | multiplatform-content-pipeline | AGENTS/README/docs 齐，根 CHANGELOG 已补 | 🔄 采集/知识提取进行中 |
 | ② 调研方法 | web-research-toolkit | SKILL.md + references 16 篇（技能仓口径自洽） | ✅ 能力成型，10 行业包全正式 |
 | ③ 情报雷达 | ai-intel-monitor | 五台账齐 | ✅ 13/15 里程碑，人工验证期 |
-| ④ 生产执行 | heritage-ai-video-sop | AGENTS/根 CHANGELOG/PROFILE/编号目录 | 🟢 On Track，M4 待做 |
+| ④ 生产执行 | ai-video-studio | AGENTS/根 CHANGELOG/PROFILE/编号目录 | 🟢 On Track，M4 待做 |
 | ⑤ 运营分发 | self-media-ops | 治理三件套已补全（TASK_STATUS/ISSUES/CHANGELOG） | 🆕 珠宝冷启动第 1 周 |
 | 治理参考 | accounting-kb | 治理标杆，全范式齐备（22 ADR） | ⏸ 等人工闸口/风控解除 |
 
