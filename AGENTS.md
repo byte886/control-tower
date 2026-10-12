@@ -2,6 +2,10 @@
 
 > 本仓是五仓体系的**总控/方法论仓**（合并自原 system-architecture 总控仓与原 multi-repo-orchestration 技能）：维护多仓库编排方法论 + 体系级总览与指针，不重复维护各仓细节正文。所有跨仓任务先读本仓 README 路由表，再进对应仓；跨仓组织方法疑问读 docs/SKILL.md。
 
+## 冷启动必读（路由）
+
+首次接触本仓或接跨仓任务按序：① 本文件（代理规则）→ ② `README.md`（五仓架构/任务路由表/跨仓纪律，唯一权威源）→ ③ `DOCUMENTATION_MAP.md`（文档地图，定位细节）。**文档写作落位与 README 防则遵循治理标杆，不复制其正文**：accounting-kb（README/AGENTS/docs 分层样板）+ content-pipeline `project-management/standards/DOCUMENTATION_PRINCIPLES.md`（8 类文档词典/新增内容落位决策表/README 防则）+ `decisions/ADR-001`（五原则）。本仓只指不搬。
+
 ## 仓定位与边界
 
 - **是什么**：五仓体系（采集/调研/情报/生产/分发 + 治理参考）的唯一权威源总览。收敛散落的架构文档（repo-map.md / 总纲.md / SYSTEM_ARCHITECTURE.md）为一份总表。
@@ -24,7 +28,7 @@
 2. **事实以读取为准**：涉及各仓状态/文档存在性必须实际读取对应仓文件，不编造、不凭记忆；不确定标"待核实"。
 3. **来源四档强制**：✅已查证 / 🔶经搜索补充 / 🟡一方说法 / ⚪未经核实——不编造 URL/价格/数据。
 4. **只加指针不改结论**：向各仓 README 加总控仓指针时，只加一行，不动既有内容与结论。
-5. **OKF 规范**：本仓新写文档自然采用 OKF v0.2 标准档 frontmatter（type 词表：Constitution / Reference / Guide / Methodology），提交前跑 `~/Doubao/skills/okf-wiki/scripts/okf_validate.py` 校验硬错误归零。
+5. **OKF 规范**：本仓长文采用 OKF v0.2 YAML frontmatter（type 词表：Constitution / Reference / Guide / Methodology），提交前跑 `~/Doubao/skills/okf-wiki/scripts/okf_validate.py` 校验。**约定（2026-10-12 评审澄清）**：根 README/AGENTS/CHANGELOG/DOCUMENTATION_MAP 与 blockquote 元数据头的 docs 文档（`> **文档类型**：…`，与 accounting-kb 标杆一致）——标杆仓自身对同类根文件亦报 E1，故 okf E1（缺 YAML frontmatter）对这几份为**预期项、不强制**；校验以"无新增硬错误、SKILL.md 等 YAML 文档 E=0"为准。
 6. **commit 规范**：`docs: 一句话变更`（参照 accounting-kb 风格），体系级变更附影响清单。
 
 ## 与会计知识库（accounting-kb）的关系

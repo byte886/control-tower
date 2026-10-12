@@ -8,6 +8,7 @@
 | [docs/SKILL.md](docs/SKILL.md) | 多仓库编排方法论全文（原技能正文：意图与驱动分离/产物驱动/总控落位/任务路由/跨仓纪律/落地步骤） | 方法论更新时 |
 | [docs/五层现状总表.md](docs/五层现状总表.md) | 逐仓现状：文档成熟度/当前状态/关键指针 | 各仓 CHANGELOG 变化时 |
 | [AGENTS.md](AGENTS.md) | 代理在此仓怎么干活（定位/边界/规则） | 规则变化时 |
+| [docs/2026-10-12-independent-governance-review.md](docs/2026-10-12-independent-governance-review.md) | 旁观者独立评审报告（复核 3bd59d9 七条 P1 闭环 + 查漏/修正/待拍板清单） | 每次治理评审时 |
 | [CHANGELOG.md](CHANGELOG.md) | 本仓变更记录 | 每次提交 |
 | [DOCUMENTATION_MAP.md](DOCUMENTATION_MAP.md) | 本文件：文档地图 | 每次提交 |
 
