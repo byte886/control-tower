@@ -24,7 +24,7 @@
 2. **事实以读取为准**：涉及各仓状态/文档存在性必须实际读取对应仓文件，不编造、不凭记忆；不确定标"待核实"。
 3. **来源四档强制**：✅已查证 / 🔶经搜索补充 / 🟡一方说法 / ⚪未经核实——不编造 URL/价格/数据。
 4. **只加指针不改结论**：向各仓 README 加总控仓指针时，只加一行，不动既有内容与结论。
-5. **OKF 规范**：本仓新写文档自然采用 OKF v0.2 标准档 frontmatter（type 词表：Constitution / Reference / Guide / Methodology），提交前跑 `okf_validate.py` 校验硬错误归零。
+5. **OKF 规范**：本仓新写文档自然采用 OKF v0.2 标准档 frontmatter（type 词表：Constitution / Reference / Guide / Methodology），提交前跑 `~/Doubao/skills/okf-wiki/scripts/okf_validate.py` 校验硬错误归零。
 6. **commit 规范**：`docs: 一句话变更`（参照 accounting-kb 风格），体系级变更附影响清单。
 
 ## 与会计知识库（accounting-kb）的关系

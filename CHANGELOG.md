@@ -2,6 +2,14 @@
 
 > 只记体系级变更（新增/合并/移除仓库、路由、纪律、治理标准、方法论变化）；各仓细节变更记在各仓自己的 CHANGELOG。
 
+## 2026-10-12（维护·五层现状总表刷新）
+
+- ［刷新］docs/五层现状总表.md 按 2026-10-12 逐仓核对重刷，销项 7 条 P1：①content-pipeline「缺根 CHANGELOG」改为「根 CHANGELOG 已补（2026-10-08 起建账）」；②`SYSTEM_ARCHITECTURE.md`「事实上的五仓总控/降级待确认」改为「薄指针，已指向本仓 control-tower；v1 全文归档 `content-pipeline/docs/archive/SYSTEM_ARCHITECTURE_v1_full_2026-10-08.md`」；③业务进度「台账停 09-23」改为「10-12 活跃：郭颖 B 级数据管线 commit 4f22a38 + 视频资产台账 manifest 387 条（238 已下载）」；④删除 video-studio「README 第 41 行发现层指针→trend-radar」这一不存在的行号锚点（编号目录六槽位自导航）；⑤旧名 `ai-video-studio` 改为「改名 video-studio（10-06 曾用名，10-09 定现名）」；⑥we-media-ops「缺 TASK_STATUS/ISSUES/CHANGELOG」改为「活态台账已补齐（根目录三件套在）」；⑦两仓 AGENTS 反向指针 control-tower 已落地（2026-10-12），总表已注明。
+- ［清理］五层现状总表「建仓后遗留待办」销项 #1（SYSTEM_ARCHITECTURE 降级）、#3（pipeline 根 CHANGELOG）、we-media-ops 台账补课条目，仅保留 we-media-ops README 目录树对齐 + LICENSE、父仓 ~/Doubao git 卫生、六件套基线三项。
+- ［同步］③ trend-radar 与 ⑤ we-media-ops 关键指针中残留的"→ pipeline SYSTEM_ARCHITECTURE（机制层/被指为唯一权威）"两处，同步改为"→ control-tower（机制层）"，与 P1-2 降级后权威归属一致。
+- ［刷新］README.md 五层现状表头快照日期 2026-10-08 → 2026-10-12。
+- ［补全］AGENTS.md OKF 校验命令由裸名 `okf_validate.py` 补全为 `~/Doubao/skills/okf-wiki/scripts/okf_validate.py`。
+
 ## 2026-10-09（改名）
 
 - ［改名］采集底座仓 `multiplatform-content-pipeline` → **`content-pipeline`**（用户拍板：原名过长；content-pipeline 为英文标准术语，砍掉 multiplatform 隐含属性，与体系 2 词风格统一）。本地目录 `~/Desktop/content-pipeline`、GitHub 远端 `byte886/content-pipeline` 同步；本仓 README/docs/SKILL/DOCUMENTATION_MAP/五层现状总表指针同步更新；we-media-ops 子模块 URL 同步。
