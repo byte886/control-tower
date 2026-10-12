@@ -4,6 +4,8 @@
 
 ## 2026-10-12（维护·五层现状总表刷新）
 
+- ［目录］新建顶层 `project-management/reviews/` 评审统一目录 + `README.md` 索引；初评报告原位保留并登记；修正轮记录 `project-management/reviews/2026-10-12-修正轮记录.md` 入库。
+- ［路由登记］D-1 转执行：AGENTS.md 补"跨仓路由登记（反向指针现状）"段——trend-radar 由本总控路由（2026-10-12 本总控登记）；其侧按"仅保留真实依赖"仓内决策不设装饰性反向指针（非遗漏）。五层现状总表③口径同步由"待补"改为"已登记路由"。
 - ［评审］docs/2026-10-12-independent-governance-review.md：旁观者独立评审入库（复核 commit 3bd59d9 七条 P1 全部闭环 + 查漏）。
 - ［修正］C-1 五层现状总表③trend-radar 关键指针：删去虚构的"control-tower 反向指针"，改为"尚未落地（实测全仓零引用），待补"，对齐 AGENTS 规则2"事实以读取为准"。
 - ［修正］C-2 AGENTS.md 补"冷启动必读（路由）"段：指向 DOCUMENTATION_MAP 入口 + 治理标杆（accounting-kb 分层样板、content-pipeline DOCUMENTATION_PRINCIPLES/ADR-001）。

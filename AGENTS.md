@@ -6,6 +6,11 @@
 
 首次接触本仓或接跨仓任务按序：① 本文件（代理规则）→ ② `README.md`（五仓架构/任务路由表/跨仓纪律，唯一权威源）→ ③ `DOCUMENTATION_MAP.md`（文档地图，定位细节）。**文档写作落位与 README 防则遵循治理标杆，不复制其正文**：accounting-kb（README/AGENTS/docs 分层样板）+ content-pipeline `project-management/standards/DOCUMENTATION_PRINCIPLES.md`（8 类文档词典/新增内容落位决策表/README 防则）+ `decisions/ADR-001`（五原则）。本仓只指不搬。
 
+## 跨仓路由登记（反向指针现状）
+
+- 情报监控仓 **trend-radar**（`~/Desktop/trend-radar`，github.com/byte886/trend-radar）由本总控路由（跨仓分层/对接/纪律权威）；该路由关系已于 2026-10-12 在本总控登记。trend-radar 侧按其"仅保留真实依赖、删除装饰性导航指针"的仓内治理决策，不设指向本仓的反向指针（其 CHANGELOG 已记录该取舍）。
+- content-pipeline、video-studio 的 AGENTS 已加指向本仓的反向指针（2026-10-12）；we-media-ops 总纲/README 已指本仓为唯一权威源。
+
 ## 仓定位与边界
 
 - **是什么**：五仓体系（采集/调研/情报/生产/分发 + 治理参考）的唯一权威源总览。收敛散落的架构文档（repo-map.md / 总纲.md / SYSTEM_ARCHITECTURE.md）为一份总表。
